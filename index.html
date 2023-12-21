@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Таймер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="timer">00:00:00</h1>
+        <div id="timerEndMessage">Таймер завершено!</div>
+        <label for="durationInput">Встановити Таймер (в секундах): </label>
+        <input type="number" id="durationInput" placeholder="Введіть тривалість">
+        <div class="button-container">
+            <button onclick="startCustomTimer()">Почати</button>
+            <button onclick="pauseCustomTimer()">Пауза</button>
+            <button onclick="resetCustomTimer()">Скинути</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
